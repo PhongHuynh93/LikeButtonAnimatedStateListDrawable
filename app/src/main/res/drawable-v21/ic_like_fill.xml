@@ -1,0 +1,13 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="24dp"
+        android:height="24dp"
+        android:viewportHeight="24"
+        android:viewportWidth="24">
+    <path
+        android:name="heartFill"
+        android:fillColor="#8947ad"
+        android:fillType="evenOdd"
+        android:pathData="M11.293,21.55l-8.996,-8.996a6.09,6.09 0,1 1,8.612 -8.613l1.056,1.055c0.02,0.02 0.05,0.02 0.07,0l1.056,-1.055a6.09,6.09 0,0 1,8.612 8.613l-8.996,8.996a1,1 0,0 1,-1.414 0z"
+        android:strokeColor="#8947ad"
+        android:strokeWidth="1"/>
+</vector>

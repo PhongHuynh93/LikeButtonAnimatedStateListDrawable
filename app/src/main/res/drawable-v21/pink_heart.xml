@@ -1,0 +1,18 @@
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/heart_size"
+    android:height="@dimen/heart_size"
+    android:viewportHeight="150"
+    android:viewportWidth="150">
+    <group
+        android:name="heart_group_pink"
+        android:pivotX="50"
+        android:pivotY="50"
+        android:translateX="25"
+        android:translateY="25">
+        <path
+            android:name="heart"
+            android:fillColor="@color/pink"
+            android:pathData="@string/heart"/>
+    </group>
+</vector>
