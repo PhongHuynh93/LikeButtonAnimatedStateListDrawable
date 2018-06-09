@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+                 xmlns:aapt="http://schemas.android.com/aapt"
+                 android:drawable="@drawable/ic_like_fill">
+
+    <target android:name="heart_group">
+        <aapt:attr name="android:animation">
+            <set
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:ordering="together">
+                <objectAnimator
+                    android:duration="@integer/heart_animation_duration"
+                    android:interpolator="@anim/custom_overshoot_interpolator"
+                    android:propertyName="scaleX"
+                    android:valueFrom="0.5"
+                    android:valueTo="1.0"/>
+                <objectAnimator
+                    android:duration="@integer/heart_animation_duration"
+                    android:interpolator="@anim/custom_overshoot_interpolator"
+                    android:propertyName="scaleY"
+                    android:valueFrom="0.5"
+                    android:valueTo="1.0"/>
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="heartFill">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="@integer/heart_change_color_duration"
+                android:propertyName="fillColor"
+                android:valueFrom="#00000000"
+                android:valueTo="#8947ad"/>
+        </aapt:attr>
+    </target>
+</animated-vector>

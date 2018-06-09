@@ -14,7 +14,7 @@
         <animated-vector android:drawable="@drawable/pink_heart">
             <target
                 android:name="heart_group_pink"
-                android:animation="@anim/appear"/>
+                android:animation="@animator/appear"/>
             <!--<target-->
             <!--android:name="heart"-->
             <!--android:animation="@anim/gray_to_pink" />-->
@@ -27,7 +27,7 @@
         <animated-vector android:drawable="@drawable/gray_heart">
             <target
                 android:name="heart_group_gray"
-                android:animation="@anim/appear"/>
+                android:animation="@animator/appear"/>
             <!--<target-->
             <!--android:name="heart"-->
             <!--android:animation="@anim/gray_to_pink" />-->

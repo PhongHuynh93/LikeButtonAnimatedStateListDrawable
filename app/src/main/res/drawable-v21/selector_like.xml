@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android"
+                   xmlns:aapt="http://schemas.android.com/aapt">
     <item
         android:id="@+id/like"
         android:drawable="@drawable/ic_like_fill"
@@ -9,21 +10,13 @@
         android:drawable="@drawable/ic_like_white"
         android:state_checked="false"/>
 
-    <!-- specify transitions -->
     <transition
+        android:drawable="@drawable/like_unchecked_checked"
         android:fromId="@id/unlike"
-        android:toId="@id/like">
-        <!--<animated-vector android:drawable="@drawable/heart">-->
-            <!--<target-->
-                <!--android:name="heart_group"-->
-                <!--android:animation="@anim/appear" />-->
-            <!--<target-->
-                <!--android:name="heart"-->
-                <!--android:animation="@anim/gray_to_pink" />-->
-        <!--</animated-vector>-->
-    </transition>
-    <!--<transition-->
-        <!--android:drawable="@drawable/toggle_checked_unchecked"-->
-        <!--android:fromId="@+id/like"-->
-        <!--android:toId="@+id/unlike" />-->
+        android:toId="@id/like" />
+
+    <transition
+        android:drawable="@drawable/like_checked_unchecked"
+        android:fromId="@+id/like"
+        android:toId="@+id/unlike" />
 </animated-selector>
